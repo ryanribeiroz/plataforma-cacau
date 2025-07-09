@@ -1,0 +1,114 @@
+/* 
+POLÍTICA DE PRIVACIDADE - ESTILOS CSS
+Descrição: Estilos para a página de política de privacidade
+Versão: 1.0
+Data: 2025.1
+Cores principais:
+- Verde principal: #17451c
+- Verde secundário: #205c28
+- Fundo: #f7f7f7
+- Texto: #222
+*/
+
+/* ESTILOS GERAIS E RESET */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    padding: 2rem 2.5rem 2rem 2.5rem;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* CABEÇALHO E LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.logo img {
+    height: 2.2rem;
+    max-width: 40vw;
+    width: auto;
+    margin-right: 0.7rem;
+}
+
+/* TIPOGRAFIA - TÍTULOS */
+h1 {
+    font-size: 2.2rem; 
+    color: #17451c;
+    margin-bottom: 1.2rem;
+}
+
+h2 {
+    font-size: 1.5rem; 
+    color: #205c28;
+    margin-top: 1.7rem;
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+}
+
+/* TIPOGRAFIA - TEXTO E LISTAS */
+p, li {
+    color: #222;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+ul {
+    margin: 0 0 1rem 1.1rem;
+}
+
+strong {
+    color: #17451c;
+}
+
+/* SEÇÕES */
+.section {
+    margin-bottom: 3.5rem; 
+}
+
+/* SEÇÃO DE CONTATO - DESTAQUE ESPECIAL */
+.contact {
+    background: #eaf5ee;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    margin-top: 1.1rem;
+}
+
+.contact strong {
+    color: #205c28;
+}
+
+/* BOTÃO DE VOLTAR */
+.btn {
+    display: block;
+    width: 100%;
+    background: #205c28;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #17451c;
+}
+/* Desenvolvido por Ryan Ribeiro no semestre 2025.1*/

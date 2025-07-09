@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Cacau - Início</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 8vh auto 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            padding: 2rem 1.5rem 2rem 1.5rem;
+            text-align: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        .logo img {
+            height: 2.2rem;
+            margin-right: 0.7rem;
+        }
+        .logo span {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #17451c;
+        }
+        h1 {
+            font-size: 1.4rem;
+            color: #17451c;
+            margin-bottom: 2rem;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+        .links a {
+            display: block;
+            background: #205c28;
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            transition: background 0.2s;
+        }
+        .links a:hover {
+            background: #17451c;
+        }
+        @media (max-width: 480px) {
+            .container {
+                max-width: 95vw;
+                padding: 1.2rem 0.5rem;
+            }
+            h1 {
+                font-size: 1.1rem;
+            }
+            .links a {
+                font-size: 1rem;
+                padding: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Logotipo da Plataforma Cacau">
+        </div>
+        <h1>Bem-vindo!<br>Escolha uma opção:</h1>
+        <div class="links">
+            <a href="politica-privacidade.html">Política de Privacidade</a>
+            <a href="termos-de-uso.html">Termos de Uso</a>
+        </div>
+    </div>
+</body>
+</html>
