@@ -16,11 +16,53 @@
     <link rel="stylesheet" href="politica-privacidade.css">
 </head>
 <body>
+    <!-- BOTÃO PARA OUVIR E MODO ESCURO -->
+        <div class="controles-acessibilidade">
+            <button id="btn-dark-mode" class="btn-acessibilidade">
+                🌙 Modo Escuro
+            </button>
+
+            <button id="btn-speech" class="btn-acessibilidade">
+                🔊 Ouvir Página
+            </button>
+        </div>
+    <!-- PAINEL DE CONTROLES DE SPEECH -->
+        <div id="speech-controls" class="speech-controls" style="display: none;">
+            <!-- Barra de Progresso -->
+            <div class="speech-progress">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <span id="progress-text">0%</span>
+            </div>
+            
+            <!-- Controle de Velocidade -->
+            <div class="speed-control">
+                <label for="speed-slider"><b>Velocidade:</b></label>
+                <input type="range" id="speed-slider" min="0.25" max="2" step="0.25" value="0.8">
+                <span id="speed-value">0.8x</span>
+            </div>
+            
+            <!-- Botões de Controle -->
+            <div class="playback-controls">
+                <button id="btn-pause" class="control-btn">⏸️</button>
+                <button id="btn-resume" class="control-btn" style="display: none;">▶️</button>
+                <button id="btn-restart" class="control-btn">⏮️</button>
+                <button id="btn-stop" class="control-btn">⏹️</button>
+            </div>
+        </div>
     <!-- INÍCIO DO CONTAINER PRINCIPAL -->
     <main class="container">
         <!-- CABEÇALHO COM LOGO -->
         <header class="logo">
             <img src="img/logo.png" alt="Plataforma Cacau Logo">
+
+            <!-- BOTÃO PARA MODO ESCURO -->
+            <div class="controles-acessibilidade">
+                <button id="btn-dark-mode" class="btn-acessibilidade">
+                    🌙 Modo Escuro
+                </button>
+            </div>
         </header>
         
         <!-- TÍTULO PRINCIPAL -->
@@ -211,5 +253,9 @@
         </footer>
     <!-- FIM DO CONTAINER PRINCIPAL -->
     </main>
+    <!-- SCRIPT MODO ESCURO -->
+    <script src="dark-mode.js"></script>
+    <!-- SCRIPT OUVIR PAGINA-->
+    <script src="speech.js"></script>
 </body>
 </html>
